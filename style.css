@@ -1,0 +1,189 @@
+/* Estilos Globais para o Corpo da Página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    margin: 9px; /* Remove margens padrão */
+    padding: 60px; /* Adiciona preenchimento interno */
+    text-align: center; /* Centraliza o texto */
+    background-color: #f7f0f0; /* Cor de fundo inicial */
+    background-image: url('/Arquivos/fundo.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    background-attachment: fixed; /* Mantém a imagem fixa durante a rolagem */
+    padding-top: 80px; /* Adiciona espaçamento superior para evitar sobreposição com o cabeçalho fixo */
+}
+
+/* Estilos para o Cabeçalho */
+header {
+    position: fixed; /* Fixa o cabeçalho no topo da página */
+    top: 0px;
+    left: 0px;
+    width: 100%; /* Largura total da página */
+    background: linear-gradient(45deg, #6a6c92, #8e82b1); /* Gradiente de fundo */
+    display: flex; /* Usa flexbox para layout */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: center; /* Espaço igual entre os itens */
+    padding: 0px 40px; /* Preenchimento interno */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    text-align: center; /* Centraliza o texto */
+    display: flex;
+    flex-direction: column; /* Coloca os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+header h1 {
+    color: rgba(12, 1, 1, 0.712); /* Cor do texto */
+    font-size: 50px; /* Tamanho da fonte */
+    margin: 0; /* Remove margens */
+    ;
+}
+
+/* Estilos para o Menu de Navegação */
+nav {
+    display: flex; /* Usa flexbox para layout */
+}
+
+nav ul {
+    display: flex;
+    list-style: none; /* Remove marcadores de lista */
+    display: flex; /* Usa flexbox para layout horizontal */
+    justify-content: center;
+    padding: 0px;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Espaçamento entre os itens */
+    
+}
+
+nav ul li a {
+    display: flex; /* Usa flexbox para layout vertical */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    transition: transform 0.3s ease-in-out; /* Transição suave para efeitos de hover */
+    padding: 10px;
+}
+
+/* Estilos para os Ícones do Menu */
+nav ul li a img {
+    width: 30px; /* Largura da imagem */
+    height: 30px; /* Altura da imagem */
+    margin-bottom: 8px; /* Espaçamento inferior */
+    transition: transform 0.3s ease-in-out; /* Transição suave para efeitos de hover */
+}
+
+/* Estilos para a Opção Ativa do Menu */
+nav ul li.active a img {
+    transform: scale(1.2); /* Aumenta o tamanho da imagem */
+    border-radius: 50%; /* Faz a imagem ficar circular */
+    padding: 10px; /* Preenchimento interno */
+}
+
+nav ul li a span {
+    
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Efeito de Hover nos Ícones do Menu */
+nav ul li:hover a img {
+    transform: scale(1.2); /* Aumenta o tamanho da imagem */
+}
+
+/* Estilos para as Seções da Página */
+section {
+    padding: 50px; /* Preenchimento interno */
+    background: rgb(248, 247, 248); /* Cor de fundo */
+    margin: 100px; /* Margem externa */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0px 4px 6px rgba(10, 10, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para a Seção de Serviços */
+#servicos {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    background: transparent; /* Fundo transparente */
+}
+
+/* Estilos para Títulos e Parágrafos */
+h1 {
+    font-size: 70px; /* Tamanho da fonte */
+}
+
+h2 {
+    font-size: 50px; /* Tamanho da fonte */
+}
+
+p {
+    font-size: 30px; /* Tamanho da fonte */
+}
+
+/* Estilos para os Itens de Serviço */
+.servico {
+    width: 90%; /* Largura do item */
+    padding: 20px; /* Preenchimento interno */
+    margin: 10px; /* Margem externa */
+    border-radius: 10px; /* Borda arredondada */
+    background: transparent; /* Fundo transparente */
+    text-align: center; /* Centraliza o texto */
+    font-size: 40px; /* Tamanho da fonte */
+}
+
+.servico img {
+    width: auto; /* Largura automática */
+    height: auto; /* Altura automática */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+/* Estilos para o Rodapé */
+footer {
+    background: #005a8d; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px; /* Preenchimento interno */
+    position: relative; /* Posição relativa */
+    width: 100%; /* Largura total */
+}
+
+/* Estilos para os Ícones de Contato */
+.icone-linkedin, .icone-email, .icone-whatsapp {
+    width: 60px; /* Largura da imagem */
+    height: 60px; /* Altura da imagem */
+}
+
+/* Estilos para o Ícone do WhatsApp */
+.icone-whatsapp {
+    position: fixed; /* Fixa o ícone */
+    bottom: 20px; /* Distância do fundo */
+    right: 50px; /* Distância da direita */
+    z-index: 1000; /* Garante que o ícone fique acima de outros elementos */
+}
+
+.icone-whatsapp img {
+    width: 100%; /* Largura total da imagem */
+    height: 100%; /* Altura total da imagem */
+    border-radius: 50%; /* Faz a imagem ficar circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: transform 0.3s ease-in-out; /* Transição suave para efeitos de hover */
+}
+
+.icone-whatsapp img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem no hover */
+}
+
+/* Estilos para o Selo de Confiança */
+.selo-confianca {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+.selo-confianca img {
+    width: 120px; /* Largura da imagem */
+    height: auto; /* Altura automática */
+}
