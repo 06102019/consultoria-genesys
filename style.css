@@ -5,7 +5,7 @@ body {
     padding: 60px; /* Adiciona preenchimento interno */
     text-align: center; /* Centraliza o texto */
     background-color: #f7f0f0; /* Cor de fundo inicial */
-    background-image: url('/Arquivos/fundo.jpg'); /* Imagem de fundo */
+    background-image: url('Arquivos/fundo.jpg'); /* Imagem de fundo */
     background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
     background-position: center; /* Centraliza a imagem de fundo */
     background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
